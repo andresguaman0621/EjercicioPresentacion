@@ -1,0 +1,18 @@
+﻿<!-- Views/RegistroDatos/MostrarRegistro.cshtml -->
+@model EjercicioPresentacion.Models.RegistroDatos
+<!-- Asegúrate de especificar el modelo de datos correspondiente -->
+
+<h2>Formulario de Registro</h2>
+
+<form asp-action="Registrar" asp-controller="RegistroDatos" method="post">
+    <!-- Aquí van los campos del formulario para el registro -->
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" />
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" />
+
+    <!-- Otros campos del formulario si es necesario -->
+
+    <button type="submit">Registrarse</button>
+</form>
